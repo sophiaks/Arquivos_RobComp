@@ -71,7 +71,7 @@ mascara_blur = cv2.blur(mascara_2, (3,3))
 
 # Contornos usando a detecção de cores acima
 # Usar o segmetado
-contornos, arvore = cv2.findContours(segmentado_cor.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+contornos, arvore = cv2.findContours(, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 contornos_img = img_rgb.copy()
 cv2.drawContours(contornos_img, contornos, -1, [0, 0, 255], 3)
 
